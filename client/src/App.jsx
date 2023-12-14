@@ -1,29 +1,18 @@
+import "./App.css";
 import React from "react";
-import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Navbar from "./components/Navbar";
+import QuizView from "./containers/QuizView";
 
 export default function App() {
   return (
     <Router>
-      <div>
-        <nav>
-          <ul>
-            <li>
-              <Link to="/">Home</Link>
-            </li>
-            <li>
-              <Link to="/about">About</Link>
-            </li>
-            <li>
-              <Link to="/users">Users</Link>
-            </li>
-          </ul>
-        </nav>
+      <Navbar />
 
-        {/* A <Routes> looks through its children <Route>s and
-            renders the first one that matches the current URL. */}
+      <div id="main__container">
         <Routes>
-          <Route path="/about" element={<About />}></Route>
-          <Route path="/users" element={<Users />}></Route>
+          <Route path="/decks" element={<Decks />}></Route>
+          <Route path="/quiz" element={<QuizView />}></Route>
           <Route path="/" element={<Home />}></Route>
         </Routes>
       </div>
@@ -35,10 +24,6 @@ function Home() {
   return <p className="text-3xl font-bold underline text-blue">Hello world!</p>;
 }
 
-function About() {
-  return <h2>About</h2>;
-}
-
-function Users() {
-  return <h2>Users</h2>;
+function Decks() {
+  return <h2>Decks</h2>;
 }

@@ -7,6 +7,7 @@ function QuizLayout() {
   const [userAnswers, setUserAnswers] = useState([]);
   const [questions, setQuestions] = useState(null);
   const [quizState, setQuizState] = useState("start");
+  console.log("questions", questions);
   useEffect(() => {
     function fetchQuestions() {
       fetch("http://localhost:3001/questions")
@@ -35,6 +36,7 @@ function QuizLayout() {
           onTransition={onTransition}
           userAnswers={userAnswers}
           questions={questions}
+          setUserAnswers={setUserAnswers}
         />
       )}
     </>

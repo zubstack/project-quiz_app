@@ -1,8 +1,10 @@
 #baseLayout {
   background-color: white;
+  color: rgb(38, 38, 38);
   margin: auto;
   width: 50%;
-  text-align: center;
-  padding: 1rem 3rem;
+  min-height: 50vh;
+  /* text-align: center; */
+  padding: 5rem 3rem;
   border-radius: 10px;
 }

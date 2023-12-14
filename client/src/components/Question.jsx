@@ -1,6 +1,7 @@
 // import "./Question.css";
 
 import { useState } from "react";
+import Button from "./ui/Button";
 
 function Question({ question, onTransition, number, last, setUserAnswers }) {
   const [currentOption, setCurrentOption] = useState(null);
@@ -26,7 +27,7 @@ function Question({ question, onTransition, number, last, setUserAnswers }) {
             <label htmlFor={index}>{option}</label>
           </div>
         ))}
-        <button type="submit">{last ? "Finish" : "Next"}</button>
+        <Button type="submit">{last ? "Finish" : "Next"}</Button>
       </form>
     </>
   );
