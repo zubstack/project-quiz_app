@@ -3,11 +3,10 @@ import FlashCard from "../components/FlashCard";
 import data from "../data/flashcards.json";
 
 function Decks() {
+  const card = data[0];
   return (
     <div>
-      {data.map((card) => (
-        <FlashCard key={card.cardId} card={card} />
-      ))}
+      <FlashCard key={card.cardId} card={card} />
     </div>
   );
 }

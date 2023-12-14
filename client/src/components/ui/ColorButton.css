@@ -1,0 +1,32 @@
+.background-slate {
+  background-color: #cbd5e1;
+}
+
+.background-slate:hover {
+  background-color: #94a3b8;
+}
+
+.background-red {
+  background-color: #fca5a5;
+}
+.background-red:hover {
+  background-color: #f87171;
+}
+
+.background-yellow {
+  background-color: #fcd34d;
+}
+.background-yellow:hover {
+  background-color: #fbbf24;
+}
+
+.background-green {
+  background-color: #bef264;
+}
+.background-green:hover {
+  background-color: #a3e635;
+}
+
+/* * {
+  border: 1px solid;
+} */

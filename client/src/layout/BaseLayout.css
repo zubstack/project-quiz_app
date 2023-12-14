@@ -5,6 +5,7 @@
   width: 50%;
   min-height: 50vh;
   /* text-align: center; */
-  padding: 5rem 3rem;
+  padding: 1.5rem 2rem;
   border-radius: 10px;
+  border: 1px solid rgb(53, 53, 53);
 }
