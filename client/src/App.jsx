@@ -2,6 +2,7 @@ import "./App.css";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import Quiz from "./pages/Quiz";
+import Decks from "./pages/Decks";
 
 export default function App() {
   return (
@@ -21,8 +22,4 @@ export default function App() {
 
 function Home() {
   return <p className="text-3xl font-bold underline text-blue">Hello world!</p>;
-}
-
-function Decks() {
-  return <h2>Decks</h2>;
 }

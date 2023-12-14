@@ -1,0 +1,37 @@
+[
+  {
+    "cardId": 721,
+    "deckId": 1,
+    "domain": "low",
+    "question": "Que es la fisica?",
+    "answer": "La física es la ciencia natural que estudia, mediante leyes fundamentales, la energía, la materia, el tiempo y el espacio, es decir, el universo mismo."
+  },
+  {
+    "cardId": 221,
+    "deckId": 1,
+    "domain": "low",
+    "question": "¿Cómo se define la velocidad en física?",
+    "answer": "La velocidad en física se define como el cambio de posición de un objeto en el tiempo. Matemáticamente, se expresa como la derivada de la posición respecto al tiempo."
+  },
+  {
+    "cardId": 329,
+    "deckId": 1,
+    "domain": "low",
+    "question": "¿Qué es la ley de la gravedad?",
+    "answer": "La ley de la gravedad, formulada por Isaac Newton, establece que dos masas se atraen directamente proporcional al producto de sus masas e inversamente proporcional al cuadrado de la distancia entre ellas."
+  },
+  {
+    "cardId": 321,
+    "deckId": 1,
+    "domain": "low",
+    "question": "¿Qué es la ley de conservación de la energía?",
+    "answer": "La ley de conservación de la energía establece que la energía total de un sistema aislado se mantiene constante. Puede cambiar de una forma a otra, pero la cantidad total de energía permanece inalterada."
+  },
+  {
+    "cardId": 361,
+    "deckId": 1,
+    "domain": "low",
+    "question": "¿Cuál es la diferencia entre masa y peso?",
+    "answer": "La masa es una medida de la cantidad de materia en un objeto, mientras que el peso es la fuerza con la que la gravedad atrae ese objeto. La masa se mide en kilogramos, y el peso en newtons."
+  }
+]
