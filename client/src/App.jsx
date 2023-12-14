@@ -1,8 +1,7 @@
 import "./App.css";
-import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
-import QuizView from "./containers/QuizView";
+import Quiz from "./pages/Quiz";
 
 export default function App() {
   return (
@@ -12,7 +11,7 @@ export default function App() {
       <div id="main__container">
         <Routes>
           <Route path="/decks" element={<Decks />}></Route>
-          <Route path="/quiz" element={<QuizView />}></Route>
+          <Route path="/quiz" element={<Quiz />}></Route>
           <Route path="/" element={<Home />}></Route>
         </Routes>
       </div>

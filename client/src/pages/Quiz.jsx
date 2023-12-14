@@ -1,7 +1,7 @@
-import QuizLayout from "./QuizLayout";
+import QuizLayout from "../containers/QuizLayout";
 import BaseLayout from "../layout/BaseLayout";
 
-function QuizView() {
+function Quiz() {
   return (
     <BaseLayout>
       <QuizLayout />
@@ -9,4 +9,4 @@ function QuizView() {
   );
 }
 
-export default QuizView;
+export default Quiz;
