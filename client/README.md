@@ -8,7 +8,12 @@
 
 # FlashCards:
 
-- Se muestra una pregunta a la vez
-- Es una secuencia de pregutas - opcion atras y adelante
 - Cada pregunta tiene tres botones que "settean" domain
-- Las respuesta tienen que ser mostradas con un "toggleShow"
+
+# Base de datos
+
+- Investigar deploy de docker container
+- Modelar las entidades
+- Modelar las relaciones
+- Inicializar postgres con node
+- Servir los datosen los respectivos endpoints
