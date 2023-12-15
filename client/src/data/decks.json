@@ -1,0 +1,20 @@
+[
+  {
+    "topic": "Conceptos basicos de fisica",
+    "deckId": 1,
+    "domain": {
+      "high": 1,
+      "mid": 3,
+      "low": 9
+    }
+  },
+  {
+    "topic": "Conceptos basicos de quimica",
+    "deckId": 2,
+    "domain": {
+      "high": 6,
+      "mid": 3,
+      "low": 5
+    }
+  }
+]

@@ -7,7 +7,7 @@ import { useState } from "react";
 function FlashCard({ card }) {
   const [toggleAnswer, setToggleAnswer] = useState(null);
   return (
-    <BaseLayout class="text-2xl font-bold flex flex-col items-center ">
+    <BaseLayout className="text-2xl font-bold flex flex-col items-center ">
       <div
         id="question__container"
         className="flex flex-col items-center justify-center relative"
