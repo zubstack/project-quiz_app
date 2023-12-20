@@ -1,14 +1,14 @@
 // import "./Question.css";
 
-import { useState } from "react";
-import Button from "./ui/Button";
+import { useState } from 'react';
+import Button from './ui/Button';
 
 function Question({ question, onTransition, number, last, setUserAnswers }) {
   const [currentOption, setCurrentOption] = useState(null);
 
   function handleSubmit(ev) {
     ev.preventDefault();
-    onTransition(`${last ? "results" : `question_${number + 1}`}`);
+    onTransition(`${last ? 'results' : `question_${number + 1}`}`);
     setUserAnswers((prev) => [...prev, currentOption]);
   }
   return (
@@ -27,7 +27,7 @@ function Question({ question, onTransition, number, last, setUserAnswers }) {
             <label htmlFor={index}>{option}</label>
           </div>
         ))}
-        <Button type="submit">{last ? "Finish" : "Next"}</Button>
+        <Button type="submit">{last ? 'Finish' : 'Next'}</Button>
       </form>
     </>
   );

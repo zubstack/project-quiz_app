@@ -1,4 +1,4 @@
-import "./ColorButton.css";
+import './ColorButton.css';
 function ColorButton(props) {
   const { color, hover } = props;
 

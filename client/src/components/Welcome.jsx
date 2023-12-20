@@ -1,4 +1,4 @@
-import Button from "./ui/Button";
+import Button from './ui/Button';
 
 function Welcome({ onTransition }) {
   return (
@@ -8,10 +8,10 @@ function Welcome({ onTransition }) {
       </h1>
       <p>
         {
-          "Whether you're a seasoned JavaScript developer or just getting started, this quiz is designed to challenge your understanding of the language and help you learn along the way."
+          'Whether you\'re a seasoned JavaScript developer or just getting started, this quiz is designed to challenge your understanding of the language and help you learn along the way.'
         }
       </p>
-      <Button onClick={() => onTransition("question_1")}>Start</Button>
+      <Button onClick={() => onTransition('question_1')}>Start</Button>
     </>
   );
 }

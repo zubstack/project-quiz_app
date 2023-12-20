@@ -1,17 +1,17 @@
-import React from "react";
-import Button from "./ui/Button";
+import React from 'react';
+import Button from './ui/Button';
 
 function Results({ onTransition, userAnswers, questions, setUserAnswers }) {
-  console.log("userAnswers", userAnswers);
+  console.log('userAnswers', userAnswers);
   userAnswers?.map((answer, index) => {
-    console.log("answer", answer === questions[index]?.answerIndex);
+    console.log('answer', answer === questions[index]?.answerIndex);
   });
   return (
     <>
       <h1>Results</h1>
       <Button
         onClick={() => {
-          onTransition("start");
+          onTransition('start');
           setUserAnswers([]);
         }}
       >

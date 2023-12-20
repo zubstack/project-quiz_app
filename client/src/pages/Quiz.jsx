@@ -1,5 +1,5 @@
-import QuizLayout from "../containers/QuizLayout";
-import BaseLayout from "../layout/BaseLayout";
+import QuizLayout from '../containers/QuizLayout';
+import BaseLayout from '../layout/BaseLayout';
 
 function Quiz() {
   return (

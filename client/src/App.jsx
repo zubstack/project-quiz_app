@@ -1,9 +1,9 @@
-import "./App.css";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Navbar from "./components/Navbar";
-import Quiz from "./pages/Quiz";
-import Decks from "./pages/Decks";
-import FlashCards from "./pages/FlashCards";
+import './App.css';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Navbar from './components/Navbar';
+import Quiz from './pages/Quiz';
+import Decks from './pages/Decks';
+import FlashCards from './pages/FlashCards';
 
 export default function App() {
   return (

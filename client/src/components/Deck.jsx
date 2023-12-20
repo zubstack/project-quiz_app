@@ -1,6 +1,6 @@
-import { useNavigate } from "react-router-dom";
-import "./Deck.css";
-import ColorButton from "./ui/ColorButton";
+import { useNavigate } from 'react-router-dom';
+import './Deck.css';
+import ColorButton from './ui/ColorButton';
 function Deck({ item }) {
   const navigate = useNavigate();
   return (
@@ -22,7 +22,7 @@ function Deck({ item }) {
           onClick={() => {
             navigate(`/flashcards?deckId=${item.deckId}`);
           }}
-          color={"yellow"}
+          color={'yellow'}
         >
           Review
         </ColorButton>
