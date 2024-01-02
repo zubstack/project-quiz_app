@@ -11,7 +11,7 @@ function Deck({ item }) {
       <div className='absolute bottom-2 right-2'>
         <ColorButton
           onClick={() => {
-            navigate('/decks');
+            navigate(`/flashcards?deckId=${item.id}`);
           }}
           color={'yellow'}
         >
