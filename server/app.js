@@ -1,13 +1,15 @@
-var express = require('express');
+const express = require('express');
 const cors = require('cors');
-var path = require('path');
-var cookieParser = require('cookie-parser');
-var logger = require('morgan');
+const path = require('path');
+const cookieParser = require('cookie-parser');
+const logger = require('morgan');
 
-var indexRouter = require('./routes/index');
-var questionsRouter = require('./routes/questions');
+const indexRouter = require('./routes/index');
+const questionsRouter = require('./routes/questions');
+const flashcardsRouter = require('./routes/flashcards');
+const decksRouter = require('./routes/decks');
 
-var app = express();
+const app = express();
 
 app.use(cors());
 app.use(logger('dev'));
@@ -16,8 +18,9 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
-console.log(`Routes`);
 app.use('/', indexRouter);
 app.use('/questions', questionsRouter);
+app.use('/flashcards', flashcardsRouter);
+app.use('/decks', decksRouter);
 
 module.exports = app;
