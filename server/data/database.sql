@@ -25,4 +25,3 @@ VALUES ('Garen','Justicia demaciana', 1, 2);
 
 
 SELECT * FROM flashcard WHERE deck_id = 2;
-SELECT * FROM flashcard WHERE deck_id = 2;

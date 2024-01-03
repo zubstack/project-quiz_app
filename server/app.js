@@ -8,8 +8,22 @@ const indexRouter = require('./routes/index');
 const questionsRouter = require('./routes/questions');
 const flashcardsRouter = require('./routes/flashcards');
 const decksRouter = require('./routes/decks');
+const { Sequelize } = require('sequelize');
 
 const app = express();
+
+const sequelize = new Sequelize({
+  dialect: 'postgres',
+  ...require('./config/database.json')['development'],
+});
+
+(async () => {
+  try {
+    console.log('Conexión establecida correctamente.');
+  } catch (error) {
+    console.error('Error al conectar a la base de datos:', error);
+  }
+})();
 
 app.use(cors());
 app.use(logger('dev'));
