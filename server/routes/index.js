@@ -1,9 +1,14 @@
 const express = require('express');
-const router = express.Router();
+const questionsRouter = require('../routes/questions');
+const flashcardsRouter = require('../routes/flashcards');
+const decksRouter = require('../routes/decks');
 
-/* GET home page. */
-router.get('/', function (req, res, next) {
-  res.json('Home page');
-});
+function routerApi(app) {
+  const router = express.Router();
+  app.use('/api/v1', router);
+  router.use('/questions', questionsRouter);
+  router.use('/flashcards', flashcardsRouter);
+  router.use('/decks', decksRouter);
+}
 
-module.exports = router;
+module.exports = routerApi;
