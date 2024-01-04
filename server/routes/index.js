@@ -1,7 +1,7 @@
 const express = require('express');
-const questionsRouter = require('../routes/questions');
-const flashcardsRouter = require('../routes/flashcards');
-const decksRouter = require('../routes/decks');
+const questionsRouter = require('./questions.router');
+const flashcardsRouter = require('./flashcards.router');
+const decksRouter = require('./decks.router');
 
 function routerApi(app) {
   const router = express.Router();
