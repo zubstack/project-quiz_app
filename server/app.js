@@ -9,16 +9,23 @@ const questionsRouter = require('./routes/questions');
 const flashcardsRouter = require('./routes/flashcards');
 const decksRouter = require('./routes/decks');
 const { Sequelize } = require('sequelize');
+const config = require('./config/config');
 
 const app = express();
+console.log(`config`, require('./config/config.js'));
 
-const sequelize = new Sequelize({
+const USER = encodeURIComponent(config.dbUser);
+const PASSWORD = encodeURIComponent(config.dbPassword);
+const URI = `postgres://${USER}:${PASSWORD}@${config.dbHost}:${config.dbPort}/${config.dbName}`;
+
+const sequelize = new Sequelize(URI, {
   dialect: 'postgres',
-  ...require('./config/database.json')['development'],
+  logging: false,
 });
 
 (async () => {
   try {
+    await sequelize.authenticate();
     console.log('Conexión establecida correctamente.');
   } catch (error) {
     console.error('Error al conectar a la base de datos:', error);

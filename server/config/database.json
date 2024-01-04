@@ -1,9 +1,0 @@
-{
-  "development": {
-    "username": "zubstack",
-    "password": "loto123",
-    "database": "quiz_app_dev",
-    "host": "localhost",
-    "dialect": "postgres"
-  }
-}
