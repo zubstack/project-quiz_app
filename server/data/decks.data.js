@@ -1,4 +1,4 @@
-const cards = require('./flashcards');
+const cards = require('./flashcards.data');
 module.exports = [
   {
     question: 'ultis',
