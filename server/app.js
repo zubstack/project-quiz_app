@@ -8,21 +8,11 @@ const indexRouter = require('./routes/index');
 const questionsRouter = require('./routes/questions');
 const flashcardsRouter = require('./routes/flashcards');
 const decksRouter = require('./routes/decks');
-const { Sequelize } = require('sequelize');
-const config = require('./config/config');
+const sequelize = require('./libs/sequelize');
 
 const app = express();
-console.log(`config`, require('./config/config.js'));
 
-const USER = encodeURIComponent(config.dbUser);
-const PASSWORD = encodeURIComponent(config.dbPassword);
-const URI = `postgres://${USER}:${PASSWORD}@${config.dbHost}:${config.dbPort}/${config.dbName}`;
-
-const sequelize = new Sequelize(URI, {
-  dialect: 'postgres',
-  logging: false,
-});
-
+// Database check connecction
 (async () => {
   try {
     await sequelize.authenticate();
