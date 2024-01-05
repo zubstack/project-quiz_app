@@ -10,4 +10,6 @@ const sequelize = new Sequelize(URI, {
   logging: false,
 });
 
+sequelize.sync({ alter: true });
+
 module.exports = sequelize;
