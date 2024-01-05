@@ -8,6 +8,7 @@ const Deck = sequelize.define(
     domain_percentage: {
       type: DataTypes.DECIMAL(5, 2),
       allowNull: false,
+      defaultValue: 0,
     },
     topic: {
       type: DataTypes.STRING(300),
